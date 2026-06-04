@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Attendance Tracker - Sign In</title>
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+      <img src="logo.png" alt="Smart Attendance Logo">
+      <h2>Smart Attendance Tracker</h2>
+    </div>
+    <div class="btn-group">
+  <button class="btn1">Log In</button>
+  <button class="btn2">Sign Up</button>
+</div>
+
+   
+  </header>
+
+  <!-- Sign In Section -->
+  <section class="signin-section">
+  <section class="text">
+    <h1>Create your account</h1>
+    <p>Join Smart Attendance Tracker today</p>
+</section>
+    <form class="signin-form" id="signupForm">
+      <fieldset>
+       <label>Full Name:</label>
+        <input required type="text" placeholder="Enter your full name">
+        <label>Email Address:</label>
+        <input required type="email" placeholder="Enter your email">
+
+        <label>Password:</label>
+        <input required type="password" placeholder="Enter your password">
+   <label>I am a:</label>
+      
+   <select name="" id="role">
+    
+            <option value="Role">Student</option>
+            <option value="Role">Teacher</option>
+        </select>
+        
+        <button type="submit" class="submit-btn">Create account</button>
+
+      </fieldset>
+    </form>
+</section>
+    <p class="alt-text">Already have an account? <a href="login.html">Sign In</a></p>
+  <script src="scripts/navigation.js"></script>
+<script src="scripts/signup.js"></script>
+
+</body>
+</html>

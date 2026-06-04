@@ -1,0 +1,149 @@
+/*#me{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+*{
+    margin: 2px;
+    padding: 0px;
+}
+.btn-grp{
+    color:white;
+    background-color: rgb(97, 97, 252);
+    cursor: pointer;
+    box-shadow: 1px 0px 2px cornflowerblue;
+    border-radius: 4px;
+    padding: 4px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 10px;
+  
+    
+}
+#me2{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    word-spacing: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.me3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  padding: 15px 30px;
+  background: #5a5ad3;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn1, .btn2 {
+  background: white;
+  color: #5a5ad3;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn1:hover, .btn2:hover {
+  background: #ddd;
+}
+
+.signin-section {
+  margin-top: 50px;
+  
+}
+
+.signin-form {
+  margin-top: 20px;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  width: 350px;
+  
+}
+
+.signin-form fieldset,select {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signin-form input,select {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.submit-btn {
+  background: #5a5ad3;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background: #4444aa;
+}
+
+.alt-text {
+  margin-top: 15px;
+}
+.alt-text a {
+  color: #5a5ad3;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+.text{
+  text-align: center;
+}
+

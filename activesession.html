@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Active Attendance Session</title>
+  <link rel="stylesheet" href="styles/activesession.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2>Smart Attendance</h2>
+    <nav>
+      <a href="teacher-dash.html">Dashboard</a>
+      <a href="create-session.html">Create Session</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+    <div class="user-info">
+      <span id="userName">Teacher</span>
+     <button class="logout-btn" id="logoutBtn">Logout</button>
+
+    </div>
+  </header>
+
+  <section class="session-info">
+    <h1 id="subjectName"></h1>
+    <p id="sessionDesc"></p>
+  </section>
+
+  <div class="main-content">
+    <div class="qr-section">
+  <h2>QR Code</h2>
+  <canvas id="qrCode"></canvas>
+  
+  <p id="timer"></p>
+  
+</div>
+
+
+    <div class="attendance-section">
+      <h2>Student Attendance</h2>
+      <p id="attendanceStatus">No students have marked attendance yet</p>
+      <p>Total: <span id="studentCount">0</span></p>
+    </div>
+  </div>
+<script src="scripts/logout.js"></script>
+
+  <script src="scripts/activesession.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Attendance - History</title>
+  <link rel="stylesheet" href="styles/history.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+      
+      <h2>Smart Attendance Tracker</h2>
+    </div>
+    <nav class="nav-links">
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="mark-attendence.html">Mark Attendance</a>
+      <a href="history.html">History</a>
+    </nav>
+    <span class="user-label">Student</span>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </header>
+
+  <!-- Main Section -->
+  <main class="history">
+    <h1>Attendance History</h1>
+    <p>View all your attendance records</p>
+
+    <!-- Empty State -->
+    <div class="empty-box">
+      <div class="icon">📅</div>
+      <p>No attendance records yet</p>
+      <p>Start marking attendance to see your history here.</p>
+    </div>
+  </main>
+
+  <script src="scripts/logout.js"></script>
+</body>
+</html>

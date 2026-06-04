@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Attendance Session</title>
+  <link rel="stylesheet" href="styles/create-session.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <h2>Smart Attendance</h2>
+    <nav>
+      <a href="teacher-dash.html">Dashboard</a>
+      <a href="create-session.html">Create Session</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+    <div class="user-info">
+      <span> Teacher</span>
+      <button class="logout-btn" id="logoutBtn">Logout</button>
+
+    </div>
+  </header>
+  <section class="session">
+<h1>Create Attendance Session</h1>
+    <p>Set up a new session for students to mark attendance</p>
+  </section>
+  <!-- Create Session Form -->
+  <section class="create-session">
+    
+    <form id="sessionForm">
+      <label for="subject">Subject Name:</label>
+      <input type="text" id="subject" placeholder="Enter subject name" required>
+    
+      <label for="description">Description (optional):</label>
+      <textarea id="description" placeholder="Lecture details..."></textarea>
+       
+      <label for="duration">Duration (seconds):</label>
+      <input type="number" id="duration" min="1" max="480" placeholder="60" required>
+      <p>Session will be active for this duration (1-480 minutes)</p>
+      <button type="submit" class="submit-btn">Create Session</button>
+    </form>
+  </section>
+<script src="scripts/logout.js"></script>
+
+  <script src="scripts/create-session.js"></script>
+</body>
+</html>

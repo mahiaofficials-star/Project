@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Attendance - Mark Attendance</title>
+  <link rel="stylesheet" href="styles/attendence.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+  
+      <h2>Smart Attendance Tracker</h2>
+    </div>
+    <nav class="nav-links">
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="mark-attendence.html">Mark Attendance</a>
+      <a href="history.html">History</a>
+    </nav>
+    <span class="user-label">Student</span>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </header>
+
+  <!-- Main Section -->
+  <main class="attendance">
+  <h1>Mark Attendance</h1>
+  <p>Scan the QR code shown by your teacher to check in.</p>
+
+  <!-- Scanner Box -->
+  <div id="qrScanner" class="scanner-box"></div>
+
+  <!-- Result -->
+  <p id="scanResult" class="result-text"></p>
+
+  <!-- Next Button (disabled initially) -->
+  <button id="nextBtn" class="next-btn" disabled>Next</button>
+</main>
+
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/html5-qrcode"></script>
+  <script src="scripts/logout.js"></script>
+  <script src="scripts/qrscanner.js"></script>
+</body>
+</html>

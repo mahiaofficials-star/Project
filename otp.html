@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Attendance - Verify OTP</title>
+  <link rel="stylesheet" href="styles/attendence.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+      
+      <h2>Smart Attendance Tracker</h2>
+    </div>
+    <nav class="nav-links">
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="mark-attendence.html">Mark Attendance</a>
+      <a href="history.html">History</a>
+    </nav>
+    <span class="user-label">Student</span>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </header>
+
+  <!-- Main Section -->
+  <main class="attendance">
+    <h1>Verify OTP</h1>
+    <p>Enter the OTP shown below within 30 seconds.</p>
+
+    <!-- OTP Box -->
+    <div id="otpBox" class="otp-box">
+      <h3>Your OTP:</h3>
+      <p id="generatedOtp"></p>
+      <p id="timer"></p>
+      <input type="text" id="otpInput" placeholder="Enter OTP">
+      <button id="verifyOtpBtn">Verify</button>
+      <p id="otpResult"></p>
+    </div>
+
+    <!-- Back Button -->
+    <button id="backBtn" class="back-btn">Back to Dashboard</button>
+  </main>
+
+  <script src="scripts/logout.js"></script>
+  <script src="scripts/otp.js"></script>
+</body>
+</html>

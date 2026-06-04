@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Attendance Tracker - Student Dashboard</title>
+  <link rel="stylesheet" href="styles/stdent_dashboard.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="logo">
+      
+      <h2>Smart Attendance Tracker</h2>
+    </div>
+    <nav class="nav-links">
+      <a href="student_dashboard.html">Dashboard</a>
+      <a href="mark-attendence.html">Mark Attendance</a>
+      <a href="history.html">History</a>
+    </nav>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </header>
+
+  <!-- Main Section -->
+  <main class="dashboard">
+    <h1>Welcome Back!!! <span id="studentName"></span></h1>
+
+    <!-- Attendance Overview -->
+    <section class="overview">
+      <div class="card">
+        <h3>Attendance Rate</h3>
+        <p id="attendanceRate">0%</p>
+      </div>
+      <div class="card">
+        <h3>Total Sessions</h3>
+        <p id="totalSessions">0</p>
+      </div>
+      <div class="card">
+        <h3>Attended</h3>
+        <p id="attendedSessions">0</p>
+      </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+      <h2>Quick Actions</h2>
+      <button onclick="window.location.href='mark-attendence.html'">Mark Attendance</button>
+      <button onclick="window.location.href='history.html'">View History</button>
+    </section>
+
+    <!-- Active Sessions -->
+    <section class="active-sessions">
+      <h2>Active Sessions</h2>
+      <div id="sessionBox" class="session-box">
+        <p>No active sessions – Please mark attendance when available.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts/logout.js"></script>
+  <script src="scripts/dashboard.js"></script>
+</body>
+</html>

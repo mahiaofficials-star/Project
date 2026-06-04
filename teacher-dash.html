@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Attendance Tracker - Teacher Dashboard</title>
+  <link rel="stylesheet" href="styles/teacher-dash.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <h2>Smart Attendance</h2>
+    <nav>
+      <a href="teacher-dash.html">Dashboard</a>
+      <a href="create-session.html">Create Session</a>
+      <a href="reports.html">Reports</a>
+    </nav>
+    <div class="user-info">
+      <span>(Teacher)</span>
+      <button class="logout-btn" id="logoutBtn">Logout</button>
+
+      
+    </div>
+  </header>
+
+  <!-- Welcome Section -->
+  <section class="welcome">
+    <h1>Welcome</h1>
+    <p>Manage your attendance sessions and track student participation</p>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="card">
+      <h3>Active Sessions</h3>
+      <p id="activeSessions">0</p>
+    </div>
+    <div class="card">
+      <h3>Students Today</h3>
+      <p id="studentsToday">0</p>
+    </div>
+  </section>
+
+  <!-- Quick Actions -->
+  <section class="quick-actions">
+    <h2>Quick Actions</h2>
+    <button  class="btn" onclick="createSession()">Create New Session <br> Start a new attendance session</button>
+    <button class="btn" onclick="viewReports()">View Reports <br> Generate attendance reports</button>
+  </section>
+
+  <!-- Active Sessions -->
+  <section class="active-sessions">
+    <h2>Active Sessions</h2>
+    <div class="session-box">
+      <p>No active sessions <br> Create a new session to get started.</p>
+    </div>
+  </section>
+   <script src="scripts/logout.js"></script>
+
+  <script src="scripts/teacher-dash.js"></script>
+</body>
+</html>
